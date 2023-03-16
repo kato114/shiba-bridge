@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBridge Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/table-sortable-master/table-sortable.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/Accordion.JS-master/accordion.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div id="page-connect" class="spage">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h1 class="font-weight-bold text-white mb-5">OBridge Admin Panel</h1>
+        <button class="btn btn-success" onclick="connectWallet()">
+          Connect Wallet
+        </button>
+      </div>
+    </div>
+    <div id="page-main" class="spage">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/nav-title-dark.png"
+              height="40"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  onclick="showTab('dashboard', this)"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showTab('pools', this)"
+                  >Manage Pools</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  onclick="showTab('transactions', this)"
+                  >Transactions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div id="tab-dashboard" class="stab">
+          <h3 class="text-white font-weight-bold my-3">Dashboard</h3>
+          <div class="pt-3">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h1 class="card-title font-weight-bold">Chains</h1>
+                    <p class="card-text h3">Supported Chain Count</p>
+                  </div>
+                  <div>
+                    <h1
+                      id="dashboard-chain-count"
+                      class="font-weight-bold display-2 mb-0"
+                    >
+                      0
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white bg-success mb-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h1 class="card-title font-weight-bold">Tokens</h1>
+                    <p class="card-text h3">Supported Token Count</p>
+                  </div>
+                  <div>
+                    <h1
+                      id="dashboard-token-count"
+                      class="font-weight-bold display-2 mb-0"
+                    >
+                      0
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white bg-danger mb-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h1 class="card-title font-weight-bold">Transactions</h1>
+                    <p class="card-text h3">Processed Transaction Count</p>
+                  </div>
+                  <div>
+                    <h1
+                      id="dashboard-transaction-count"
+                      class="font-weight-bold display-2 mb-0"
+                    >
+                      0
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-pools" class="stab">
+          <h3 class="text-white font-weight-bold my-3">Manage Pools</h3>
+          <ul id="pool-list" class="accordionjs mt-5"></ul>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Deposit To Pool
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="pool-address" class="col-form-label"
+                        >Pool Address:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="pool-address"
+                        disabled
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="pool-token-address" class="col-form-label"
+                        >Token Address:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="pool-token-address"
+                        disabled
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="pool-token-amount" class="col-form-label"
+                        >Balance:</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="pool-token-amount"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    id="pool-deposit"
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    Deposit
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-transactions" class="stab">
+          <h3 class="text-white font-weight-bold my-3">User transactions</h3>
+          <div class="content bg-dark text-white border-1 px-3 py-1 mt-5">
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <div class="d-flex align-items-center">
+                <span class="pr-3">Rows Per Page:</span>
+                <div class="d-flex justify-content-end">
+                  <select
+                    class="custom-select"
+                    name="rowsPerPage"
+                    id="changeRows"
+                  >
+                    <option value="10" selected>10</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    <option value="80">80</option>
+                    <option value="80">100</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search in table..."
+                  id="searchField"
+                />
+              </div>
+            </div>
+            <div id="history_root"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bg-success p-2">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <img src="./assets/img/footer-logo.webp" height="40px" />
+          <div class="d-flex">
+            <a
+              class="p-2"
+              href="https://twitter.com/dyno_chain"
+              target="_blank"
+            >
+              <i class="bi bi-twitter text-white"></i>
+            </a>
+            <a
+              class="p-2"
+              href="https://github.com/dyno-protocol"
+              target="_blank"
+            >
+              <i class="bi bi-github text-white"></i>
+            </a>
+            <a class="p-2" href="https://t.me/dynoobridge" target="_blank">
+              <i class="bi bi-telegram text-white"></i>
+            </a>
+            <a
+              class="p-2"
+              href="https://discord.com/invite/WC5thfjRDt"
+              target="_blank"
+            >
+              <i class="bi bi-discord text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="spinner" class="active justify-content-center align-items-center">
+      <div class="spinner-grow text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./assets/libs/table-sortable-master/table-sortable.js"></script>
+  <script src="./assets/libs/Accordion.JS-master/accordion.js"></script>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/abis/ERC20.js"></script>
+  <script src="./assets/js/abis/oToken.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/table.js"></script>
+  <script src="./assets/js/pools.js"></script>
+</html>

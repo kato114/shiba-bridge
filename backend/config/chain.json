@@ -1,0 +1,29 @@
+{
+    "5": {
+        "chainId": "5",
+        "name": "Goerli testnet",
+        "rpcUrl": "https://eth-goerli.g.alchemy.com/v2/wof7auYpE1XflYQac4zJxK3ix4Yk855C",
+        "scanUrl": "https://goerli.etherscan.io/",
+        "wssUrl": "",
+        "blockPeriod": "12000",
+        "routerAddress": "0xc4C9A5EF9db85BA399eB41FA829c78F96E2ca769"
+    },
+    "97": {
+        "chainId": "97",
+        "name": "BSC Testnet",
+        "rpcUrl": "https://data-seed-prebsc-1-s1.binance.org:8545",
+        "scanUrl": "https://testnet.bscscan.com/",
+        "wssUrl": "",
+        "blockPeriod": "3000",
+        "routerAddress": "0x6daC61D1a4f8CbAb67843a62F6ECCB5b073ea2aD"
+    },
+    "917": {
+        "chainId": "917",
+        "name": "Shibarium Beta",
+        "rpcUrl": "https://puppynet.shibrpc.com",
+        "scanUrl": "https://puppyscan.shib.io",
+        "wssUrl": "",
+        "blockPeriod": "5000",
+        "routerAddress": "0xA4E0b401B978c615251D7D6F498F493Fcec007a0"
+    }
+}

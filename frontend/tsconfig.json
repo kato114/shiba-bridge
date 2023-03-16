@@ -1,0 +1,21 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "target": "es5",
+    "paths": {
+      "@obridge/sdk": ["../packages/swap-sdk/src/index.ts"],
+      "@obridge/wagmi/connectors/binanceWallet": ["../packages/wagmi/connectors/binanceWallet/index.ts"],
+      "@obridge/wagmi/connectors/miniProgram": ["../packages/wagmi/connectors/miniProgram/index.ts"],
+      "@obridge/wagmi/chains": ["../packages/wagmi/chains/index.ts"],
+      "@obridge/wagmi": ["../packages/wagmi/src/index.ts"],
+      "@obridge/hooks": ["../packages/hooks/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "cypress", "/apps/*"],
+  "include": ["next-env.d.ts", "./src/**/*.ts", "./src/**/*.tsx"]
+}

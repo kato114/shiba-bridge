@@ -1,0 +1,57 @@
+{
+  "name": "Obridge Default List",
+  "timestamp": "2022-11-01T11:45:09Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://app.obridge.finance/logo.png",
+  "keywords": [
+    "obridge",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "BONE SHIBASWAP",
+      "address": "0x9163621bB3E3998BF788A73C381c8DB36853177a",
+      "symbol": "BONE",
+      "chainId": 5,
+      "decimals": 18,
+      "logoURI": "/images/tokens/5/0x9163621bB3E3998BF788A73C381c8DB36853177a.png"
+    },
+    {
+      "name": "ShibWallet Token",
+      "address": "0x7720C09AB0b30384De1d9150bd5D8376B3b0fA07",
+      "symbol": "SWT",
+      "chainId": 5,
+      "decimals": 18,
+      "logoURI": "/images/tokens/5/0x7720C09AB0b30384De1d9150bd5D8376B3b0fA07.png"
+    },
+    {
+      "name": "BONE SHIBASWAP",
+      "address": "0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb",
+      "symbol": "BONE",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/97/0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb.png"
+    },
+    {
+      "name": "ShibWallet Token",
+      "address": "0x02474822c256677Ba251120FED7cD767a9f879BA",
+      "symbol": "SWT",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "/images/tokens/97/0x02474822c256677Ba251120FED7cD767a9f879BA.png"
+    },
+    {
+      "name": "ShibWallet Token",
+      "address": "0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb",
+      "symbol": "SWT",
+      "chainId": 917,
+      "decimals": 18,
+      "logoURI": "/images/tokens/917/0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb.png"
+    }
+  ]
+}
