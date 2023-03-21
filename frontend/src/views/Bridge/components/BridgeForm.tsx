@@ -141,8 +141,7 @@ export default function BridgeForm() {
   }
 
   // check whether the user has approved the router on the input token
-  const [approval, approveCallback] = useApproveCallbackFromTrade(chainId, currencyBalances[Field.INPUT])
-
+  const [approval, approveCallback] = useApproveCallbackFromTrade(chainId, parsedAmounts[Field.INPUT])
   // check if user has gone through approval process, used to show two step buttons, reset on token change
   const [approvalSubmitted, setApprovalSubmitted] = useState<boolean>(false)
 

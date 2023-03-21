@@ -18,7 +18,7 @@ export const bscTestnetProvider = new StaticJsonRpcProvider(
 
 export const goerliProvider = new StaticJsonRpcProvider(
   {
-    url: 'https://eth-goerli.nodereal.io/v1/8a4432e42df94dcca2814fde8aea2a2e',
+    url: 'eth-goerli.g.alchzemy.com/v2/wof7auYpE1XflYQac4zJxK3ix4Yk855C',
     skipFetchSetup: true,
   },
   5,
