@@ -1,4 +1,4 @@
-# 🎖️ Obridge Frontend
+# 🎖️ ShibBridge Frontend
 
 This project contains the main features of the ShibWallet Router.
 
