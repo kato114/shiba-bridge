@@ -70,7 +70,7 @@ export const coinbaseConnector = new CoinbaseWalletConnector({
   chains,
   options: {
     appName: 'ShibWallet',
-    appLogoUrl: 'https://app.obridge.finance/logo.png',
+    appLogoUrl: 'https://static.wixstatic.com/media/cbedf8_a28a501eb2114a11ad7e18fa5667c5d7~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cbedf8_a28a501eb2114a11ad7e18fa5667c5d7~mv2.png',
   },
 })
 
