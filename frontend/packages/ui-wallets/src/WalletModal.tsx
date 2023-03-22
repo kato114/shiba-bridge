@@ -429,8 +429,8 @@ const Intro = () => {
       <Heading as="h1" fontSize="20px" color="secondary">
         {t('Haven’t got a wallet yet?')}
       </Heading>
-      <Image src="https://wallet.dynochain.io/img/bg-home-spaceman-and-dog.aa05774d.png" width={198} height={178} />
-      <Button as={LinkExternal} color="backgroundAlt" variant="subtle" href={getDocLink(code)}>
+      <img src="http://31.220.62.199/logo.png" width="198px" />
+      <Button as={LinkExternal} color="backgroundAlt" variant="subtle" href="https://shibwallet.gitbook.io/shibwallet/">
         {t('Learn How to Connect')}
       </Button>
     </>

@@ -11,7 +11,7 @@ const tokenList = require("../config/token.json");
 const routerABI = require("../abis/OBridgeRounter.json");
 
 router.post("/register/:cid/:tx_hash", async (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://144.202.19.210");
+  res.setHeader("Access-Control-Allow-Origin", "http://31.220.62.199");
   res.setHeader("Access-Control-Allow-Methods", "POST");
 
   let cid = req.params.cid;
@@ -31,7 +31,7 @@ router.post("/register/:cid/:tx_hash", async (req, res) => {
 
   if (rows.status == "failed") {
     res.send({ status: "failed", msg: "register: db error" });
-  } else if (rows.data.length < 0) {
+  } else if (rows.data.length > 0) {
     res.send({ status: "failed", msg: "register: registered transaction" });
   } else {
     try {

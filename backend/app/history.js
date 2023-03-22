@@ -4,7 +4,7 @@ var router = express.Router();
 var database = require("./database.js");
 
 router.get("/", async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  res.setHeader("Access-Control-Allow-Origin", "http://31.220.62.199");
   res.setHeader("Access-Control-Allow-Methods", "GET");
 
   let rows = await database.select("transactions", []);
@@ -13,7 +13,7 @@ router.get("/", async function (req, res) {
 });
 
 router.get("/missed", async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  res.setHeader("Access-Control-Allow-Origin", "http://31.220.62.199");
   res.setHeader("Access-Control-Allow-Methods", "GET");
 
   let rows = await database.selectMissed("transactions", {});
@@ -22,7 +22,7 @@ router.get("/missed", async function (req, res) {
 });
 
 router.get("/missed/:cid/:t_token_addr", async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  res.setHeader("Access-Control-Allow-Origin", "http://31.220.62.199");
   res.setHeader("Access-Control-Allow-Methods", "GET");
 
   let cid = req.params.cid;
