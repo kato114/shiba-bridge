@@ -5,7 +5,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'ShibWallet',
   description: 'Cross-Chain Router Protocol. The Ultimate Router for Web3.0',
-  image: 'https://obridge.finance/wp-content/uploads/2022/10/gif2.gif',
+  image: 'https://shibwallet.app/wp-content/uploads/2022/10/gif2.gif',
 }
 
 interface PathList {

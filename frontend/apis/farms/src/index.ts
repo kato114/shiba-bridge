@@ -18,7 +18,7 @@ import { FarmKV } from './kv'
 
 const router = Router()
 
-const allowedOrigin = /[^\w](obridge\.run)|(localhost:3000)|(obridge.finance)|(obridge.com)$/
+const allowedOrigin = /[^\w](obridge\.run)|(localhost:3000)|(shibwallet.app)|(shibwallet.com)$/
 
 router.get('/apr', async ({ query }) => {
   if (typeof query?.key === 'string' && query.key === FORCE_UPDATE_KEY) {

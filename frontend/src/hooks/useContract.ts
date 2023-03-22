@@ -13,7 +13,7 @@ import zapAbi from 'config/abi/zap.json'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useProviderOrSigner } from 'hooks/useProviderOrSigner'
 import { useMemo } from 'react'
-import { getMulticallAddress, getPredictionsV1Address, getZapAddress } from 'utils/addressHelpers'
+import { getMulticallAddress, getPredictionsV1Address, getZapAddress, getFaucetAddress } from 'utils/addressHelpers'
 import {
   getAnniversaryAchievementContract,
   getBCakeFarmBoosterContract,
@@ -70,6 +70,7 @@ import ERC20_ABI from '../config/abi/erc20.json'
 import IOBridgePairABI from '../config/abi/IOBridgePair.json'
 import multiCallAbi from '../config/abi/Multicall.json'
 import WETH_ABI from '../config/abi/weth.json'
+import tokenFaucetAbi from '../config/abi/tokenFaucet.json'
 import { getContract } from '../utils'
 
 import { VaultKey } from '../state/types'
@@ -377,4 +378,9 @@ export const useCrossFarmingProxy = (proxyContractAddress: string, withSignerIfP
     () => proxyContractAddress && getCrossFarmingProxyContract(proxyContractAddress, providerOrSigner, chainId),
     [proxyContractAddress, providerOrSigner, chainId],
   )
+}
+
+export function useFaucetContract() {
+  const { chainId } = useActiveWeb3React()
+  return useContract(getFaucetAddress(chainId), tokenFaucetAbi, true)
 }

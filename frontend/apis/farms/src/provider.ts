@@ -2,7 +2,7 @@ import { StaticJsonRpcProvider } from '@ethersproject/providers'
 
 export const bscProvider = new StaticJsonRpcProvider(
   {
-    url: 'https://nodes.obridge.com',
+    url: 'https://nodes.shibwallet.app',
     skipFetchSetup: true,
   },
   56,

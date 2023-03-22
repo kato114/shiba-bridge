@@ -29,7 +29,7 @@ export const Wallet: React.FC<React.PropsWithChildren> = () => {
         installed: typeof window !== "undefined" && Boolean(window.ethereum?.isMetaMask),
         connectorId: ConnectorNames.MetaMask,
         priority: 1,
-        href: "https://metamask.app.link/dapp/obridge.finance/",
+        href: "https://metamask.app.link/dapp/shibwallet.app/",
       },
       {
         title: "Binance Wallet",

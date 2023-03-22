@@ -12,6 +12,7 @@ import { getBlockExploreLink, getBlockExploreName } from 'utils'
 import { formatBigNumber } from 'utils/formatBalance'
 import { useBalance } from 'wagmi'
 import CopyAddress from './CopyAddress'
+import Balance from 'components/Balance'
 
 const COLORS = {
   ETH: '#627EEA',

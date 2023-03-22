@@ -207,7 +207,7 @@ export const bscTokens = {
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://obridge.finance/',
+    'https://shibwallet.app/',
   ),
   pha: new Token(
     ChainId.BSC,

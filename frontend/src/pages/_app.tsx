@@ -65,13 +65,13 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
         />
         <meta
           name="description"
-          content="Cheaper and faster than Anyswap? Discover Obridge, Cross-Chain Router Protocol. MPC, the powerful symbol of decentralization, processes."
+          content="ShibWallet: First WalletBridge + Trending Tools integrated"
         />
         <meta name="theme-color" content="#171719" />
-        <meta name="twitter:image" content="https://obridge.finance/images/hero.png" />
+        <meta name="twitter:image" content="https://static.wixstatic.com/media/cbedf8_a28a501eb2114a11ad7e18fa5667c5d7~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cbedf8_a28a501eb2114a11ad7e18fa5667c5d7~mv2.png" />
         <meta
           name="twitter:description"
-          content="Cross-Chain Router Protocol. MPC, the powerful symbol of decentralization, processes Multichain cross-chain bridging and smart contract methods on other chains.ShibWallet Router allows users to swap between any two chains freely. It reduces fees and makes it easier to move between chains."
+          content="ShibWallet: First WalletBridge + Trending Tools integrated"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="ShibWallet - The Ultimate Router for Web3.0" />

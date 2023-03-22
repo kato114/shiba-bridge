@@ -2,7 +2,7 @@
   "short_name": "ShibWallet",
   "name": "ShibWallet",
   "description": "Cross-Chain Router Protocol",
-  "homepage_url": "https://obridge.finance/",
+  "homepage_url": "https://shibwallet.app/",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

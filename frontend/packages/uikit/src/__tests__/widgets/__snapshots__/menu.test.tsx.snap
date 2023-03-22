@@ -1905,7 +1905,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c27"
-              href="https://obridge.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+              href="https://shibwallet.app/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
               target="_blank"
             >
               <svg
@@ -2271,7 +2271,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/contact-us"
+                    href="https://docs.shibwallet.app/contact-us"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2301,7 +2301,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/contact-us/telegram"
+                    href="https://docs.shibwallet.app/contact-us/telegram"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2316,7 +2316,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/tokenomics/cake"
+                    href="https://docs.shibwallet.app/tokenomics/cake"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2364,7 +2364,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="Support https://docs.obridge.finance/contact-us/customer-support"
+                    href="Support https://docs.shibwallet.app/contact-us/customer-support"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2379,7 +2379,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/help/troubleshooting"
+                    href="https://docs.shibwallet.app/help/troubleshooting"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2394,7 +2394,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/get-started"
+                    href="https://docs.shibwallet.app/get-started"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2433,7 +2433,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance"
+                    href="https://docs.shibwallet.app"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2463,7 +2463,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/help/faq#is-obridge-safe-has-obridge-been-audited"
+                    href="https://docs.shibwallet.app/help/faq#is-obridge-safe-has-obridge-been-audited"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -2478,7 +2478,7 @@ exports[`renders correctly 1`] = `
                     color="text"
                     data-theme="dark"
                     font-size="16px"
-                    href="https://docs.obridge.finance/hiring/become-a-chef"
+                    href="https://docs.shibwallet.app/hiring/become-a-chef"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -3172,7 +3172,7 @@ exports[`renders correctly 1`] = `
                 >
                   <a
                     class="c27"
-                    href="https://obridge.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+                    href="https://shibwallet.app/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
                     target="_blank"
                   >
                     <svg
@@ -3237,7 +3237,7 @@ exports[`renders correctly 1`] = `
                 <a
                   class="c92"
                   data-theme="light"
-                  href="https://obridge.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+                  href="https://shibwallet.app/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
                   scale="sm"
                   target="_blank"
                 >

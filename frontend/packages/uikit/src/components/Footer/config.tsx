@@ -8,7 +8,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://docs.obridge.finance/contact-us",
+        href: "https://docs.shibwallet.app/contact-us",
       },
       {
         label: "Blog",
@@ -16,11 +16,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Community",
-        href: "https://docs.obridge.finance/contact-us/telegram",
+        href: "https://docs.shibwallet.app/contact-us/telegram",
       },
       {
         label: "CAKE",
-        href: "https://docs.obridge.finance/tokenomics/cake",
+        href: "https://docs.shibwallet.app/tokenomics/cake",
       },
       {
         label: "—",
@@ -37,15 +37,15 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://docs.obridge.finance/contact-us/customer-support",
+        href: "Support https://docs.shibwallet.app/contact-us/customer-support",
       },
       {
         label: "Troubleshooting",
-        href: "https://docs.obridge.finance/help/troubleshooting",
+        href: "https://docs.shibwallet.app/help/troubleshooting",
       },
       {
         label: "Guides",
-        href: "https://docs.obridge.finance/get-started",
+        href: "https://docs.shibwallet.app/get-started",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Documentation",
-        href: "https://docs.obridge.finance",
+        href: "https://docs.shibwallet.app",
       },
       {
         label: "Bug Bounty",
@@ -66,11 +66,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Audits",
-        href: "https://docs.obridge.finance/help/faq#is-obridge-safe-has-obridge-been-audited",
+        href: "https://docs.shibwallet.app/help/faq#is-obridge-safe-has-obridge-been-audited",
       },
       {
         label: "Careers",
-        href: "https://docs.obridge.finance/hiring/become-a-chef",
+        href: "https://docs.shibwallet.app/hiring/become-a-chef",
       },
     ],
   },

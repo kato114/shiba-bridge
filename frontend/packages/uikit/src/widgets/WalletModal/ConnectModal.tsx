@@ -93,7 +93,7 @@ function ConnectModal<T>({ login, onDismiss = () => null, displayCount = 3, t, w
           </Text>
           <Button
             as="a"
-            href="https://docs.obridge.finance/get-started/connection-guide"
+            href="https://docs.shibwallet.app/get-started/connection-guide"
             variant="subtle"
             width="100%"
             {...EXTERNAL_LINK_PROPS}

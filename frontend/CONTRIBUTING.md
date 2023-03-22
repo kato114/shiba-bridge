@@ -1,7 +1,7 @@
 # Contributing to the OBridge 🎖️
 
 Thanks for taking the time to contribute !
-You can start by reading our [Contribution guidelines](https://docs.obridge.finance/code/contributing) first.
+You can start by reading our [Contribution guidelines](https://docs.shibwallet.app/code/contributing) first.
 
 ## Setup
 

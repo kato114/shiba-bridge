@@ -45,8 +45,8 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting https://obridge.finance - check the URL carefully.")
-    return warningText.split(/(https:\/\/obridge.finance)/g)
+    const warningText = t("please make sure you're visiting https://shibwallet.app - check the URL carefully.")
+    return warningText.split(/(https:\/\/shibwallet.app)/g)
   }, [t])
   const warningTextComponent = (
     <>
@@ -59,8 +59,8 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           key={i}
           small
           as="span"
-          bold={text === 'https://obridge.finance'}
-          color={text === 'https://obridge.finance' ? '#FFFFFF' : '#BDC2C4'}
+          bold={text === 'https://shibwallet.app'}
+          color={text === 'https://shibwallet.app' ? '#FFFFFF' : '#BDC2C4'}
         >
           {text}
         </Text>

@@ -145,8 +145,8 @@ export const NATIVE: Record<
   }
 > = {
   [ChainId.ETHEREUM]: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-  [ChainId.RINKEBY]: { name: 'Rinkeby Ether', symbol: 'RIN', decimals: 18 },
-  [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
+  [ChainId.RINKEBY]: { name: 'Rinkeby Ether', symbol: 'ETH', decimals: 18 },
+  [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
   [ChainId.BSC]: {
     name: 'Binance Chain Native Token',
     symbol: 'BNB',
@@ -154,7 +154,7 @@ export const NATIVE: Record<
   },
   [ChainId.BSC_TESTNET]: {
     name: 'Binance Chain Native Token',
-    symbol: 'tBNB',
+    symbol: 'BNB',
     decimals: 18,
   },
   [ChainId.DYNO]: {
@@ -168,7 +168,7 @@ export const NATIVE: Record<
     decimals: 18,
   },
   [ChainId.SHIBA]: {
-    name: 'Puppy Net',
+    name: 'Shibarium',
     symbol: 'BONE',
     decimals: 18,
   },

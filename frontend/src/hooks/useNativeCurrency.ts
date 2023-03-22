@@ -6,7 +6,7 @@ export default function useNativeCurrency(): NativeCurrency {
   const { chainId } = useActiveWeb3React()
 
   return useMemo(() => {
-    return Native.onChain(ChainId.SHIBA_BETA)
+    return Native.onChain(chainId)
     try {
       return Native.onChain(chainId == ChainId.SHIBA_BETA ? ChainId.SHIBA_BETA : ChainId.GOERLI)
     } catch (e) {

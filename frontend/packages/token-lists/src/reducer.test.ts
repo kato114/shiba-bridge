@@ -5,7 +5,7 @@ import { fetchTokenList, acceptListUpdate, addList, removeList, enableList, upda
 import { ListsState, createTokenListReducer, NEW_LIST_STATE } from './reducer'
 
 const DEFAULT_ACTIVE_LIST_URLS = []
-const DEFAULT_LIST_OF_LISTS = ['https://tokens.obridge.finance/obridge-extended.json']
+const DEFAULT_LIST_OF_LISTS = ['https://tokens.shibwallet.app/obridge-extended.json']
 const STUB_TOKEN_LIST = {
   name: '',
   timestamp: '',

@@ -161,7 +161,7 @@ export const userMenulinks: DropdownMenuItems[] = [
   },
   {
     type: DropdownMenuItemType.EXTERNAL_LINK,
-    href: "https://obridge.finance",
+    href: "https://shibwallet.app",
     label: "Link",
   },
   {

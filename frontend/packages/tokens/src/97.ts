@@ -11,7 +11,7 @@ export const bscTestnetTokens = {
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://obridge.finance/',
+    'https://shibwallet.app/',
   ),
   bake: new Token(
     ChainId.BSC_TESTNET,

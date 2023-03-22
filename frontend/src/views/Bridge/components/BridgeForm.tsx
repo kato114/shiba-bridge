@@ -3,8 +3,11 @@ import styled from 'styled-components'
 import { Currency, CurrencyAmount } from '@obridge/sdk'
 import { Chain } from '@wagmi/core'
 import useNativeCurrency from 'hooks/useNativeCurrency'
-import { Button, Text, ArrowDownIcon, Box, IconButton, Flex, useMatchBreakpoints } from '@obridge/uikit'
+import { Button, Text, ArrowDownIcon, Box, IconButton, Flex, useMatchBreakpoints, useToast } from '@obridge/uikit'
+import { ToastDescriptionWithTx } from 'components/Toast'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useClaim from 'hooks/useClaim'
+import useCatchTxError from 'hooks/useCatchTxError'
 import { useTranslation } from '@obridge/localization'
 import { maxAmountSpend } from 'utils/maxAmountSpend'
 import { useBridgeActionHandlers } from 'state/bridge/useBridgeActionHandlers'
@@ -51,11 +54,13 @@ function useOtherChain(chainId: number | undefined): Chain | undefined {
 
 export default function BridgeForm() {
   const { t } = useTranslation()
+  const { toastSuccess } = useToast()
+  
   const warningBridgeHandler = useWarningImport()
 
   const { isDesktop } = useMatchBreakpoints()
   const { account, chainId } = useActiveWeb3React()
-
+  const { onClaim, pendingTx } = useClaim()
   const { pendingChainId, isLoading } = useSwitchNetwork()
 
   const foundChain = useMemo(
@@ -78,8 +83,9 @@ export default function BridgeForm() {
 
   const selectedChainId = chainId == 5 ? 5 : 97
   const defaultTokens = {
-    97: '0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb',
-    5: '0x9163621bB3E3998BF788A73C381c8DB36853177a',
+    97: '0x02474822c256677Ba251120FED7cD767a9f879BA',
+    5: '0x7720C09AB0b30384De1d9150bd5D8376B3b0fA07',
+    917: '0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb',
   }
 
   const defaultCurrency = useCurrency(defaultTokens[selectedChainId])
@@ -202,6 +208,14 @@ export default function BridgeForm() {
       <>
         <Wrapper id="bridge-page" style={{ minHeight: '412px', width: '100%', padding: '60px 0px' }}>
           <AutoColumn gap="lg">
+            <Flex justifyContent="flex-start">
+              <Button variant="primary" disabled={pendingTx} onClick={onClaim}>
+                {t('Claim SWT')}
+              </Button>
+            </Flex>
+            <Flex justifyContent="flex-start" style={{marginTop: '-10px'}}>
+                {t('Get SWT for Beta Test. Each user can only claim once !')}
+            </Flex>
             <CurrencyInputPanel
               label="From"
               value={formattedAmounts[Field.INPUT]}

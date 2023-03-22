@@ -4,7 +4,7 @@ import { ThemeContext as StyledThemeContext } from 'styled-components'
 import { useTheme as useNextTheme } from 'next-themes'
 
 export const COOKIE_THEME_KEY = 'theme'
-export const THEME_DOMAIN = '.obridge.finance'
+export const THEME_DOMAIN = '.shibwallet.app'
 
 const useTheme = () => {
   const { resolvedTheme, setTheme } = useNextTheme()

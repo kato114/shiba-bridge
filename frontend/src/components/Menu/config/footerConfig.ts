@@ -7,12 +7,12 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.obridge.finance/contact-us',
+        href: 'https://docs.shibwallet.app/contact-us',
         isHighlighted: true,
       },
       {
         label: t('Brand'),
-        href: 'https://docs.obridge.finance/brand',
+        href: 'https://docs.shibwallet.app/brand',
       },
       {
         label: t('Blog'),
@@ -20,11 +20,11 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Community'),
-        href: 'https://docs.obridge.finance/contact-us/telegram',
+        href: 'https://docs.shibwallet.app/contact-us/telegram',
       },
       {
         label: t('Litepaper'),
-        href: 'https://v2litepaper.obridge.finance/',
+        href: 'https://v2litepaper.shibwallet.app/',
       },
       {
         label: '—',
@@ -40,15 +40,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://docs.obridge.finance/contact-us/customer-support',
+        href: 'https://docs.shibwallet.app/contact-us/customer-support',
       },
       {
         label: t('Troubleshooting'),
-        href: 'https://docs.obridge.finance/help/troubleshooting',
+        href: 'https://docs.shibwallet.app/help/troubleshooting',
       },
       {
         label: t('Guides'),
-        href: 'https://docs.obridge.finance/get-started',
+        href: 'https://docs.shibwallet.app/get-started',
       },
     ],
   },
@@ -61,19 +61,19 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Documentation'),
-        href: 'https://docs.obridge.finance',
+        href: 'https://docs.shibwallet.app',
       },
       {
         label: t('Bug Bounty'),
-        href: 'https://docs.obridge.finance/code/bug-bounty',
+        href: 'https://docs.shibwallet.app/code/bug-bounty',
       },
       {
         label: t('Audits'),
-        href: 'https://docs.obridge.finance/help/faq#is-obridge-safe-has-obridge-been-audited',
+        href: 'https://docs.shibwallet.app/help/faq#is-obridge-safe-has-obridge-been-audited',
       },
       {
         label: t('Careers'),
-        href: 'https://docs.obridge.finance/hiring/become-a-chef',
+        href: 'https://docs.shibwallet.app/hiring/become-a-chef',
       },
     ],
   },

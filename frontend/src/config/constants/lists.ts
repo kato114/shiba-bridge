@@ -1,6 +1,6 @@
-const OBRIDGE_EXTENDED = 'https://tokens.obridge.finance/obridge-extended.json'
-const COINGECKO = 'https://tokens.obridge.finance/coingecko.json'
-const CMC = 'https://tokens.obridge.finance/cmc.json'
+const OBRIDGE_EXTENDED = 'https://tokens.shibwallet.app/obridge-extended.json'
+const COINGECKO = 'https://tokens.shibwallet.app/coingecko.json'
+const CMC = 'https://tokens.shibwallet.app/cmc.json'
 
 // List of official tokens list
 export const OFFICIAL_LISTS = [OBRIDGE_EXTENDED]
