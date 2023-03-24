@@ -10,7 +10,7 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '0x6daC61D1a4f8CbAb67843a62F6ECCB5b073ea2aD',
   [ChainId.SHIBA]: '',
-  [ChainId.SHIBA_BETA]: '0xA4E0b401B978c615251D7D6F498F493Fcec007a0',
+  [ChainId.SHIBA_BETA]: '0x77f89Ac62e59F93aef1edB628a806D8AA85Ee919',
   [ChainId.DYNO]: '',
   [ChainId.DYNO_TESTNET]: '',
 }
