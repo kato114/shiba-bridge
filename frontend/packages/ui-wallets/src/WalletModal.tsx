@@ -429,7 +429,7 @@ const Intro = () => {
       <Heading as="h1" fontSize="20px" color="secondary">
         {t('Haven’t got a wallet yet?')}
       </Heading>
-      <img src="http://31.220.62.199/logo.png" width="198px" />
+      <img src="http://82.223.152.87/logo.png" width="198px" />
       <Button as={LinkExternal} color="backgroundAlt" variant="subtle" href="https://shibwallet.gitbook.io/shibwallet/">
         {t('Learn How to Connect')}
       </Button>
