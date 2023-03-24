@@ -49,9 +49,9 @@
       "name": "ShibWallet Token",
       "address": "0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb",
       "symbol": "SWT",
-      "chainId": 917,
+      "chainId": 719,
       "decimals": 18,
-      "logoURI": "/images/tokens/917/0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb.png"
+      "logoURI": "/images/tokens/719/0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb.png"
     }
   ]
 }

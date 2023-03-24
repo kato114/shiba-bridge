@@ -10,8 +10,8 @@ export enum ChainId {
   GOERLI = 5,
   BSC = 56,
   BSC_TESTNET = 97,
-  SHIBA = 917,
-  SHIBA_BETA = 917,
+  SHIBA = 719,
+  SHIBA_BETA = 719,
   DYNO = 7363,
   DYNO_TESTNET = 7364,
 }

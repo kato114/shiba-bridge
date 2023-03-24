@@ -85,13 +85,13 @@ export default function BridgeForm() {
   const defaultTokens = {
     97: '0x02474822c256677Ba251120FED7cD767a9f879BA',
     5: '0x7720C09AB0b30384De1d9150bd5D8376B3b0fA07',
-    917: '0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb',
+    719: '0x8a50055a26ad4B03644889ea7c97eb0fFF61BDeb',
   }
 
   const defaultCurrency = useCurrency(defaultTokens[selectedChainId])
 
-  const inputCurrency = useCurrency(inputCurrencyId) ?? (chainId == 917 ? native : defaultCurrency)
-  const outputCurrency = useCurrency(outputCurrencyId) ?? (chainId == 917 ? native : defaultCurrency)
+  const inputCurrency = useCurrency(inputCurrencyId) ?? (chainId == 719 ? native : defaultCurrency)
+  const outputCurrency = useCurrency(outputCurrencyId) ?? (chainId == 719 ? native : defaultCurrency)
 
   const currencies: { [field in Field]?: Currency } = useMemo(
     () => ({

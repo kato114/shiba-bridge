@@ -161,7 +161,7 @@ export const dynoTest: Chain = {
 }
 
 export const shiba: Chain = {
-  id: 917,
+  id: 719,
   name: 'Shiba Chain',
   network: 'shiba-mainnet',
   nativeCurrency: {
@@ -177,13 +177,13 @@ export const shiba: Chain = {
     default: { name: 'PuppyScan', url: 'https://puppyscan.shib.io' },
   },
   multicall: {
-    address: '0x1c1875446765D2E50E3398afd9819F094249F531',
-    blockCreated: 390064,
+    address: '0xFDdB4Cf4378EFC6b329833240b24Ccd47Aa6A9A7',
+    blockCreated: 85420,
   },
 }
 
 export const shibaTest: Chain = {
-  id: 917,
+  id: 719,
   name: 'Puppy Net',
   network: 'shiba-testnet',
   nativeCurrency: {
@@ -199,8 +199,8 @@ export const shibaTest: Chain = {
     default: { name: 'PuppyScan', url: 'https://puppyscan.shib.io' },
   },
   multicall: {
-    address: '0x1c1875446765D2E50E3398afd9819F094249F531',
-    blockCreated: 390064,
+    address: '0xFDdB4Cf4378EFC6b329833240b24Ccd47Aa6A9A7',
+    blockCreated: 85420,
   },
 }
 
