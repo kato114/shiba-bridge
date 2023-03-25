@@ -33,7 +33,7 @@ export function useBridgeCallArguments(
     }
 
     const swapMethods = []
-
+    
     swapMethods.push(
       Router.swapCallParameters({
         type,
